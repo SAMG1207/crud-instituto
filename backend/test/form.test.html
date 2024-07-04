@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="../index.php" method="POST" enctype="multipart/form-data">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" />
+      </div>
+      <div id="apellido">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="" />
+      </div>
+      <div id="correo">
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="" />
+      </div>
+      <div id="telefono">
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" id="" />
+      </div>
+      <div id="foto">
+        <label for="foto">Foto</label>
+        <input
+          type="file"
+          id="foto"
+          name="foto"
+          accept="image/jpeg, image/png"
+          required
+        />
+      </div>
+      <input type="submit" aria-label="enviar" />
+    </form>
+  </body>
+</html>
